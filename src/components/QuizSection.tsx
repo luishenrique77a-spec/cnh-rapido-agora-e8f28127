@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, ArrowRight, Car, Truck, Bike } from "lucide-react";
@@ -46,6 +46,28 @@ const QuizSection = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
   const [isCompleted, setIsCompleted] = useState(false);
+
+  // Reset quiz when component mounts (page load) and on visibility change
+  useEffect(() => {
+    const resetQuiz = () => {
+      setCurrentQuestion(0);
+      setAnswers([]);
+      setIsCompleted(false);
+    };
+
+    // Reset on visibility change (when user returns to page)
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        resetQuiz();
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
 
   const handleAnswer = (answer: string) => {
     const newAnswers = [...answers, answer];
