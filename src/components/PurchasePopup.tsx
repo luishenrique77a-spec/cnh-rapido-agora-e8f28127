@@ -12,8 +12,8 @@ const PurchasePopup = () => {
       setHasBeenClosed(false);
     };
 
-    // Show popup every 30 seconds regardless of close
-    const intervalTimer = setInterval(showPopup, 30000);
+    // Show popup every 15 seconds
+    const intervalTimer = setInterval(showPopup, 15000);
 
     return () => {
       clearInterval(intervalTimer);

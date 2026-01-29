@@ -123,7 +123,7 @@ const QuizSection = () => {
           <Button 
             size="lg" 
             onClick={handleBuy}
-            className="bg-green-500 hover:bg-green-600 text-white text-lg px-10 py-6 rounded-full shadow-xl mb-4"
+            className="bg-green-500 hover:bg-green-600 text-white text-base md:text-lg px-6 md:px-10 py-5 md:py-6 rounded-full shadow-xl mb-4 w-full max-w-xs"
           >
             QUERO COMEÇAR AGORA - R$ 9,99
           </Button>
