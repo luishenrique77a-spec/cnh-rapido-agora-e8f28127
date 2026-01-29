@@ -8,19 +8,14 @@ const PurchasePopup = () => {
 
   useEffect(() => {
     const showPopup = () => {
-      if (!hasBeenClosed) {
-        setIsVisible(true);
-      }
+      setIsVisible(true);
+      setHasBeenClosed(false);
     };
 
-    // Show first popup after 5 seconds
-    const initialTimer = setTimeout(showPopup, 5000);
-
-    // Then show every 30 seconds
+    // Show popup every 30 seconds regardless of close
     const intervalTimer = setInterval(showPopup, 30000);
 
     return () => {
-      clearTimeout(initialTimer);
       clearInterval(intervalTimer);
     };
   }, [hasBeenClosed]);

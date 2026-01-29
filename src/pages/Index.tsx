@@ -104,7 +104,7 @@ const Index = () => {
           <Button 
             size="lg" 
             onClick={handleBuy}
-            className="bg-green-500 hover:bg-green-600 text-white text-xl px-10 py-7 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 animate-bounce"
+            className="bg-green-500 hover:bg-green-600 text-white text-xl px-10 py-7 rounded-full shadow-2xl"
           >
             🚗 QUERO MINHA CNH AGORA!
           </Button>
