@@ -8,7 +8,7 @@ import PremiumContentSection from "@/components/PremiumContentSection";
 
 const Index = () => {
   const handleBuy = () => {
-    window.open("https://pay.hotmart.com/SEU_LINK_AQUI", "_blank");
+    window.open("https://pay.cakto.com.br/w443b7o_747017", "_blank");
   };
 
   const testimonials = [

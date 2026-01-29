@@ -25,13 +25,13 @@ const PurchasePopup = () => {
   };
 
   const handleBuy = () => {
-    window.open("https://pay.hotmart.com/SEU_LINK_AQUI", "_blank");
+    window.open("https://pay.cakto.com.br/w443b7o_747017", "_blank");
   };
 
   if (!isVisible) return null;
 
   return (
-    <div className="fixed top-4 left-4 z-50">
+    <div className="fixed top-4 right-4 z-50">
       <div className="bg-gradient-to-r from-green-500 to-green-600 text-white p-4 rounded-xl shadow-2xl max-w-[280px] relative">
         <button
           onClick={handleClose}
