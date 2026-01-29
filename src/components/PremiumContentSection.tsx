@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Crown, RefreshCw, Video, FileText, MessageCircle, Zap } from "lucide-react";
 
 const PremiumContentSection = () => {
@@ -40,10 +39,10 @@ const PremiumContentSection = () => {
     <section className="py-16 px-4 bg-gradient-to-b from-background to-secondary/20">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-12">
-          <Badge className="mb-4 bg-primary/10 text-primary border-primary/20 text-sm px-4 py-1">
-            <Crown className="w-4 h-4 mr-2 inline" />
+          <span className="inline-flex items-center mb-4 bg-primary/10 text-primary border border-primary/20 text-sm px-4 py-1 rounded-full">
+            <Crown className="w-4 h-4 mr-2" />
             CONTEÚDO PREMIUM
-          </Badge>
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
             Tudo Que Você Vai Receber
           </h2>
