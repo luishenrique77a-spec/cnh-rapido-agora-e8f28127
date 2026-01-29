@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Shield, Clock, Star, Lock, Award, ArrowRight } from "lucide-react";
 import PurchasePopup from "@/components/PurchasePopup";
+import SocialProofPopup from "@/components/SocialProofPopup";
 import QuizSection from "@/components/QuizSection";
 import PremiumContentSection from "@/components/PremiumContentSection";
 
@@ -68,6 +69,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <PurchasePopup />
+      <SocialProofPopup />
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground py-12 md:py-16 px-4 overflow-hidden">
