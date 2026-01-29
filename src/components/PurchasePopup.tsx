@@ -31,8 +31,8 @@ const PurchasePopup = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed top-4 left-4 z-50 animate-in slide-in-from-left-full duration-500">
-      <div className="bg-gradient-to-r from-green-500 to-green-600 text-white p-4 rounded-xl shadow-2xl max-w-xs relative">
+    <div className="fixed top-4 left-4 z-50">
+      <div className="bg-gradient-to-r from-green-500 to-green-600 text-white p-4 rounded-xl shadow-2xl max-w-[280px] relative">
         <button
           onClick={handleClose}
           className="absolute -top-2 -right-2 bg-white text-gray-600 rounded-full p-1 shadow-lg hover:bg-gray-100 transition-colors"

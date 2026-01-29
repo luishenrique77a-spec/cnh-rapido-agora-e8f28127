@@ -66,11 +66,11 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <PurchasePopup />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground py-12 md:py-20 px-4 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground py-12 md:py-16 px-4 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent_50%)]"></div>
         </div>
@@ -104,7 +104,7 @@ const Index = () => {
           <Button 
             size="lg" 
             onClick={handleBuy}
-            className="bg-green-500 hover:bg-green-600 text-white text-xl px-10 py-7 rounded-full shadow-2xl"
+            className="bg-green-500 hover:bg-green-600 text-white text-lg md:text-xl px-8 md:px-10 py-6 md:py-7 rounded-full shadow-2xl w-full max-w-md"
           >
             🚗 QUERO MINHA CNH AGORA!
           </Button>
@@ -152,7 +152,7 @@ const Index = () => {
             <Button 
               size="lg" 
               onClick={handleBuy}
-              className="bg-green-500 hover:bg-green-600 text-white text-lg px-12 py-7 rounded-full shadow-xl hover:scale-105 transition-transform"
+              className="bg-green-500 hover:bg-green-600 text-white text-base md:text-lg px-8 md:px-12 py-6 rounded-full shadow-xl w-full max-w-sm"
             >
               GARANTIR MINHA VAGA POR R$ 9,99
             </Button>
@@ -236,7 +236,7 @@ const Index = () => {
           <Button 
             size="lg" 
             onClick={handleBuy}
-            className="bg-green-500 hover:bg-green-600 text-white text-xl px-12 py-8 rounded-full shadow-2xl hover:scale-105 transition-transform"
+            className="bg-green-500 hover:bg-green-600 text-white text-lg md:text-xl px-8 md:px-12 py-6 md:py-8 rounded-full shadow-2xl w-full max-w-md"
           >
             QUERO COMEÇAR AGORA - R$ 9,99
           </Button>
@@ -298,7 +298,7 @@ const Index = () => {
           <Button 
             size="lg" 
             onClick={handleBuy}
-            className="bg-green-500 hover:bg-green-600 text-white text-2xl px-14 py-10 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+            className="bg-green-500 hover:bg-green-600 text-white text-lg md:text-2xl px-10 md:px-14 py-6 md:py-10 rounded-full shadow-2xl w-full max-w-md"
           >
             🚗 QUERO MINHA CNH AGORA!
           </Button>
